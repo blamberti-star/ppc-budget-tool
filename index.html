@@ -1,37 +1,95 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPC Budget Calculator & Industry Benchmarks | Paid Advertising Spend Tool</title>
-    <meta name="description" content="Free PPC budget calculator with industry benchmarks for Google Ads, Meta/Facebook, and paid social. Get conversion rate, CPC, and ROAS data by industry to plan your paid advertising spend.">
-    <meta name="keywords" content="PPC budget calculator, Google Ads benchmarks, Facebook Ads benchmarks, paid advertising budget, CPC by industry, conversion rate benchmarks, ROAS calculator, marketing spend calculator">
+    <title>PPC Budget Calculator & Industry Benchmarks | Rizen Metrics</title>
+    <meta name="description" content="Free PPC budget calculator with industry benchmarks for Google Ads, Meta/Facebook. Get accurate conversion estimates, cost per lead, and ROI projections by industry.">
+    <meta name="keywords" content="PPC budget calculator, Google Ads benchmarks, Facebook Ads benchmarks, paid advertising budget, CPC by industry, conversion rate benchmarks, ROAS calculator">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="PPC Budget Calculator & Industry Benchmarks">
-    <meta property="og:description" content="Plan your paid advertising budget with real industry benchmarks for Google Ads, Meta/Facebook, and more.">
+    <link rel="canonical" href="https://www.rizenmetrics.com/ppc-budget-tool/">
+    
+    <meta property="og:title" content="PPC Budget Calculator & Industry Benchmarks | Rizen Metrics">
+    <meta property="og:description" content="Plan your paid advertising budget with real industry benchmarks for Google Ads, Meta/Facebook. Free tool with 2024-2025 CPC, conversion rate, and ROAS data.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.rizenmetrics.com/ppc-budget-tool/">
+    <meta property="og:site_name" content="Rizen Metrics">
     
-    <!-- Schema.org markup for SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PPC Budget Calculator & Industry Benchmarks">
+    <meta name="twitter:description" content="Plan your paid advertising budget with real industry benchmarks for Google Ads, Meta/Facebook.">
+
+    <!-- Schema 1: WebApplication -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "PPC Budget Calculator",
-        "description": "Interactive paid advertising budget calculator with industry benchmarks for Google Ads and Meta/Facebook advertising",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Any",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PPC Budget Calculator & Forecasting Tool",
+      "alternateName": ["Paid Advertising Budget Calculator", "Google Ads Budget Planner"],
+      "description": "Free PPC budget calculator with 2024-2025 industry benchmarks for Google Ads and Meta/Facebook advertising.",
+      "url": "https://www.rizenmetrics.com/ppc-budget-tool/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Rizen Metrics",
+        "url": "https://www.rizenmetrics.com"
+      }
+    }
+    </script>
+
+    <!-- Schema 2: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the average Google Ads CPC in 2024?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The average Google Ads CPC in 2024 is $4.66. Legal services average $8.94, Home improvement $6.96, while Arts & Entertainment averages $1.72 and Travel $1.92."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good conversion rate for Google Ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The average Google Ads conversion rate in 2024 is 6.96%. Top performers: Automotive Repair (12.96%), Animals & Pets (12.03%), Healthcare (11.08%). Lower rates: Finance (2.78%), E-commerce (2.81%), Real Estate (2.91%)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a good ROAS for paid advertising?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A good ROAS ranges from 3:1 to 5:1 for e-commerce. For lead generation, calculate by multiplying leads by close rate and deal value. The 2024 median Google Ads ROAS is 3.08x."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the average cost per lead by industry?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Average CPL varies: Legal $111, Finance $90, B2B $78, Real Estate $66, Education $55, E-commerce $45, Healthcare $38, Restaurants $30, Pets $19."
+          }
         }
+      ]
     }
     </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -50,23 +108,14 @@
             --text-muted: #64748b;
             --border-color: #334155;
             --gradient-1: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-            --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-            --gradient-3: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
             --shadow-glow: 0 0 40px rgba(59, 130, 246, 0.15);
             --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             --font-mono: 'JetBrains Mono', monospace;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
         body {
             font-family: var(--font-sans);
             background: var(--bg-primary);
@@ -75,13 +124,9 @@
             min-height: 100vh;
         }
 
-        /* Background Effects */
         .bg-grid {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background-image: 
                 linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
@@ -90,30 +135,6 @@
             z-index: 0;
         }
 
-        .bg-gradient-orb {
-            position: fixed;
-            width: 600px;
-            height: 600px;
-            border-radius: 50%;
-            filter: blur(100px);
-            opacity: 0.15;
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .orb-1 {
-            top: -200px;
-            right: -200px;
-            background: var(--accent-primary);
-        }
-
-        .orb-2 {
-            bottom: -200px;
-            left: -200px;
-            background: var(--accent-secondary);
-        }
-
-        /* Layout */
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -122,11 +143,10 @@
             z-index: 1;
         }
 
-        /* Header */
         header {
-            padding: 32px 0;
+            padding: 24px 0;
             border-bottom: 1px solid var(--border-color);
-            background: rgba(10, 15, 28, 0.8);
+            background: rgba(10, 15, 28, 0.9);
             backdrop-filter: blur(20px);
             position: sticky;
             top: 0;
@@ -148,35 +168,30 @@
         }
 
         .logo-icon {
-            width: 48px;
-            height: 48px;
+            width: 44px;
+            height: 44px;
             background: var(--gradient-1);
-            border-radius: 12px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
             font-size: 20px;
         }
 
-        .logo-text h1 {
-            font-size: 1.25rem;
+        .logo h1 {
+            font-size: 1.125rem;
             font-weight: 700;
-            letter-spacing: -0.02em;
         }
 
-        .logo-text span {
-            font-size: 0.75rem;
-            color: var(--text-secondary);
+        .logo span {
+            font-size: 0.7rem;
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
 
-        nav {
-            display: flex;
-            gap: 8px;
-        }
-
+        nav { display: flex; gap: 8px; }
+        
         nav a {
             color: var(--text-secondary);
             text-decoration: none;
@@ -192,9 +207,8 @@
             background: var(--bg-tertiary);
         }
 
-        /* Hero */
         .hero {
-            padding: 80px 0;
+            padding: 60px 0 40px;
             text-align: center;
         }
 
@@ -203,175 +217,118 @@
             align-items: center;
             gap: 8px;
             padding: 6px 16px;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
             border-radius: 100px;
             font-size: 0.8rem;
-            color: var(--accent-primary);
-            margin-bottom: 24px;
-        }
-
-        .hero-badge::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background: var(--accent-success);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            color: var(--accent-success);
+            margin-bottom: 20px;
         }
 
         .hero h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 700;
             letter-spacing: -0.03em;
             line-height: 1.1;
-            margin-bottom: 24px;
-            background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            margin-bottom: 16px;
         }
 
         .hero p {
-            font-size: 1.125rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto 40px;
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 24px;
-            max-width: 900px;
+            max-width: 650px;
             margin: 0 auto;
         }
 
-        .stat-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 24px;
-            text-align: center;
-        }
-
-        .stat-value {
-            font-family: var(--font-mono);
-            font-size: 2rem;
-            font-weight: 600;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: 4px;
-        }
-
-        /* Sections */
-        section {
-            padding: 80px 0;
-        }
+        section { padding: 60px 0; }
 
         .section-header {
             text-align: center;
-            margin-bottom: 48px;
+            margin-bottom: 40px;
         }
 
         .section-header h3 {
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
 
         .section-header p {
             color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
         }
 
-        /* Calculator Section */
         .calculator-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
+            grid-template-columns: 1fr 1.3fr;
             gap: 32px;
             align-items: start;
         }
 
         @media (max-width: 1024px) {
-            .calculator-wrapper {
-                grid-template-columns: 1fr;
-            }
+            .calculator-wrapper { grid-template-columns: 1fr; }
         }
 
         .input-panel, .results-panel {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 32px;
-            box-shadow: var(--shadow-glow);
+            border-radius: 16px;
+            padding: 28px;
         }
 
         .panel-header {
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 28px;
-            padding-bottom: 20px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
             border-bottom: 1px solid var(--border-color);
         }
 
         .panel-icon {
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             background: var(--gradient-1);
-            border-radius: 10px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 16px;
         }
 
         .panel-header h4 {
-            font-size: 1.125rem;
+            font-size: 1rem;
             font-weight: 600;
         }
 
         .form-group {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .form-group label {
             display: block;
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             font-weight: 500;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             color: var(--text-secondary);
         }
 
-        .form-group label .required {
-            color: var(--accent-danger);
+        .form-group label .required { color: var(--accent-danger); }
+        
+        .label-hint {
+            font-weight: 400;
+            color: var(--text-muted);
+            font-size: 0.75rem;
         }
 
-        select, input[type="number"], input[type="text"] {
+        select, input[type="number"] {
             width: 100%;
-            padding: 14px 16px;
+            padding: 12px 14px;
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: 8px;
             color: var(--text-primary);
             font-family: var(--font-sans);
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: all 0.2s;
         }
 
@@ -384,11 +341,11 @@
         select {
             cursor: pointer;
             appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
             background-repeat: no-repeat;
             background-position: right 12px center;
-            background-size: 18px;
-            padding-right: 44px;
+            background-size: 16px;
+            padding-right: 40px;
         }
 
         .input-prefix {
@@ -398,71 +355,80 @@
         .input-prefix::before {
             content: '$';
             position: absolute;
-            left: 16px;
+            left: 14px;
             top: 50%;
             transform: translateY(-50%);
             color: var(--text-muted);
-            font-weight: 500;
         }
 
-        .input-prefix input {
-            padding-left: 32px;
+        .input-prefix input { padding-left: 28px; }
+
+        .input-suffix {
+            position: relative;
         }
+
+        .input-suffix::after {
+            content: '%';
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+        }
+
+        .input-suffix input { padding-right: 32px; }
 
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
-            padding: 14px 28px;
+            padding: 14px 24px;
             border: none;
-            border-radius: 10px;
+            border-radius: 8px;
             font-family: var(--font-sans);
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
+            width: 100%;
         }
 
         .btn-primary {
             background: var(--gradient-1);
             color: white;
-            width: 100%;
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
         }
 
-        .btn-secondary {
-            background: var(--bg-tertiary);
-            color: var(--text-primary);
-            border: 1px solid var(--border-color);
-        }
-
-        /* Results */
-        .results-summary {
+        .results-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 16px;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 
         .result-card {
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 20px;
+            border-radius: 10px;
+            padding: 16px;
         }
 
         .result-card.highlight {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
-            border-color: rgba(59, 130, 246, 0.3);
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .result-card.full-width {
+            grid-column: span 2;
         }
 
         .result-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -473,45 +439,70 @@
             font-family: var(--font-mono);
             font-size: 1.5rem;
             font-weight: 600;
-            color: var(--text-primary);
         }
 
-        .result-value.positive {
-            color: var(--accent-success);
-        }
+        .result-value.positive { color: var(--accent-success); }
+        .result-value.negative { color: var(--accent-danger); }
+        .result-value.neutral { color: var(--accent-warning); }
 
-        .result-change {
+        .result-note {
             font-size: 0.75rem;
             color: var(--text-muted);
             margin-top: 4px;
         }
 
-        /* Budget Allocation */
-        .allocation-section {
-            margin-top: 28px;
-            padding-top: 28px;
-            border-top: 1px solid var(--border-color);
+        .math-breakdown {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
         }
 
-        .allocation-header {
+        .math-breakdown h5 {
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+
+        .math-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+            font-size: 0.875rem;
         }
 
-        .allocation-header h5 {
-            font-size: 1rem;
+        .math-row:last-child { border-bottom: none; }
+
+        .math-row.total {
+            border-top: 2px solid var(--border-color);
+            border-bottom: none;
+            margin-top: 8px;
+            padding-top: 12px;
             font-weight: 600;
         }
 
+        .math-label { color: var(--text-secondary); }
+        
+        .math-value {
+            font-family: var(--font-mono);
+            color: var(--text-primary);
+        }
+
+        .allocation-section {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+        }
+
         .allocation-bar {
-            height: 12px;
+            height: 10px;
             background: var(--bg-secondary);
             border-radius: 100px;
             overflow: hidden;
             display: flex;
-            margin-bottom: 16px;
+            margin: 16px 0;
         }
 
         .allocation-segment {
@@ -522,47 +513,68 @@
         .allocation-legend {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 10px;
         }
 
         .legend-item {
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 12px;
+            padding: 10px;
             background: var(--bg-secondary);
-            border-radius: 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
         }
 
         .legend-color {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 3px;
             flex-shrink: 0;
         }
 
-        .legend-info {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .legend-name {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-
         .legend-value {
             font-family: var(--font-mono);
-            font-size: 0.875rem;
             font-weight: 600;
+            margin-left: auto;
         }
 
-        /* Industry Benchmarks Table */
+        .disclaimer {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin-top: 24px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .disclaimer-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--accent-warning);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: var(--bg-primary);
+        }
+
+        .disclaimer p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
         .benchmarks-section {
             background: var(--bg-secondary);
-            border-radius: 24px;
-            padding: 48px;
-            margin-top: 48px;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
         }
 
         .table-wrapper {
@@ -573,390 +585,99 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.875rem;
-        }
-
-        thead {
-            background: var(--bg-tertiary);
+            font-size: 0.85rem;
         }
 
         th {
-            padding: 16px;
+            padding: 14px 12px;
             text-align: left;
             font-weight: 600;
             color: var(--text-secondary);
             text-transform: uppercase;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             letter-spacing: 0.05em;
+            background: var(--bg-tertiary);
             white-space: nowrap;
         }
 
         td {
-            padding: 16px;
+            padding: 14px 12px;
             border-bottom: 1px solid var(--border-color);
         }
 
-        tr:hover td {
-            background: rgba(59, 130, 246, 0.05);
-        }
+        tr:hover td { background: rgba(59, 130, 246, 0.03); }
 
-        .industry-name {
-            font-weight: 600;
-            color: var(--text-primary);
-        }
-
+        .industry-name { font-weight: 600; }
+        
         .metric-value {
             font-family: var(--font-mono);
             color: var(--accent-primary);
         }
 
-        .metric-badge {
+        .badge {
             display: inline-flex;
-            align-items: center;
-            padding: 4px 10px;
+            padding: 3px 8px;
             border-radius: 100px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
         }
 
-        .badge-high {
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--accent-success);
+        .badge-ecom { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+        .badge-lead { background: rgba(6, 182, 212, 0.15); color: #22d3ee; }
+
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+            text-align: center;
         }
 
-        .badge-medium {
-            background: rgba(245, 158, 11, 0.1);
-            color: var(--accent-warning);
-        }
-
-        .badge-low {
-            background: rgba(239, 68, 68, 0.1);
-            color: var(--accent-danger);
-        }
-
-        /* Platform Cards */
-        .platform-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
-            margin-top: 32px;
-        }
-
-        .platform-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 28px;
-            transition: all 0.3s;
-        }
-
-        .platform-card:hover {
-            border-color: var(--accent-primary);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-glow);
-        }
-
-        .platform-header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 20px;
-        }
-
-        .platform-logo {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.25rem;
-        }
-
-        .platform-logo.google {
-            background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
-        }
-
-        .platform-logo.meta {
-            background: linear-gradient(135deg, #0081FB 0%, #00C2FF 100%);
-        }
-
-        .platform-logo.linkedin {
-            background: #0A66C2;
-        }
-
-        .platform-logo.tiktok {
-            background: linear-gradient(135deg, #00f2ea 0%, #ff0050 100%);
-        }
-
-        .platform-name {
-            font-size: 1.125rem;
-            font-weight: 600;
-        }
-
-        .platform-type {
-            font-size: 0.75rem;
+        footer p {
+            font-size: 0.85rem;
             color: var(--text-muted);
         }
 
-        .platform-metrics {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-        }
+        .hidden { display: none; }
 
-        .platform-metric {
-            padding: 12px;
-            background: var(--bg-secondary);
+        .industry-hint {
+            background: var(--bg-tertiary);
             border-radius: 8px;
-        }
-
-        .platform-metric-label {
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-
-        .platform-metric-value {
-            font-family: var(--font-mono);
-            font-size: 1.125rem;
-            font-weight: 600;
-            margin-top: 4px;
-        }
-
-        /* Disclaimer */
-        .disclaimer {
-            background: rgba(245, 158, 11, 0.1);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin-top: 32px;
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .disclaimer-icon {
-            width: 24px;
-            height: 24px;
-            background: var(--accent-warning);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            font-weight: 700;
-            font-size: 0.875rem;
-            color: var(--bg-primary);
-        }
-
-        .disclaimer-content h6 {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: var(--accent-warning);
-            margin-bottom: 4px;
-        }
-
-        .disclaimer-content p {
+            padding: 12px 16px;
+            margin-bottom: 20px;
             font-size: 0.8rem;
             color: var(--text-secondary);
-            line-height: 1.6;
-        }
-
-        /* Tabs */
-        .tabs {
-            display: flex;
-            gap: 4px;
-            background: var(--bg-secondary);
-            padding: 4px;
-            border-radius: 10px;
-            margin-bottom: 24px;
-        }
-
-        .tab {
-            flex: 1;
-            padding: 10px 20px;
-            border: none;
-            background: transparent;
-            color: var(--text-muted);
-            font-family: var(--font-sans);
-            font-size: 0.875rem;
-            font-weight: 500;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: all 0.2s;
-        }
-
-        .tab.active {
-            background: var(--bg-card);
-            color: var(--text-primary);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .tab-content {
             display: none;
         }
 
-        .tab-content.active {
-            display: block;
-        }
+        .industry-hint.show { display: block; }
 
-        /* Footer */
-        footer {
-            padding: 48px 0;
-            border-top: 1px solid var(--border-color);
-            margin-top: 80px;
-        }
+        .industry-hint strong { color: var(--text-primary); }
 
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 24px;
-        }
-
-        .footer-text {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        .footer-links {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.875rem;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-primary);
-        }
-
-        /* Data Source Badge */
-        .data-source {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.7rem;
-            color: var(--text-muted);
-            padding: 4px 10px;
-            background: var(--bg-tertiary);
-            border-radius: 4px;
-            margin-left: 12px;
-        }
-
-        /* Tooltips */
-        .tooltip {
-            position: relative;
-            cursor: help;
-        }
-
-        .tooltip::after {
-            content: attr(data-tooltip);
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 8px 12px;
-            background: var(--bg-primary);
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.2s;
-            z-index: 100;
-        }
-
-        .tooltip:hover::after {
-            opacity: 1;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero {
-                padding: 48px 0;
-            }
-
-            .section-header h3 {
-                font-size: 1.5rem;
-            }
-
-            .input-panel, .results-panel {
-                padding: 24px;
-            }
-
-            .results-summary {
-                grid-template-columns: 1fr;
-            }
-
-            .allocation-legend {
-                grid-template-columns: 1fr;
-            }
-
-            .benchmarks-section {
-                padding: 24px;
-            }
-
-            nav {
-                display: none;
-            }
-
-            table {
-                font-size: 0.75rem;
-            }
-
-            th, td {
-                padding: 12px 8px;
-            }
-        }
-
-        /* Print Styles */
-        @media print {
-            .bg-grid, .bg-gradient-orb, header, nav, .btn, footer {
-                display: none;
-            }
-
-            body {
-                background: white;
-                color: black;
-            }
-
-            .input-panel, .results-panel, .benchmarks-section, .platform-card {
-                border: 1px solid #ddd;
-                box-shadow: none;
-            }
+            .results-grid { grid-template-columns: 1fr; }
+            .result-card.full-width { grid-column: span 1; }
+            .allocation-legend { grid-template-columns: 1fr; }
+            .benchmarks-section { padding: 24px; }
+            nav { display: none; }
         }
     </style>
 </head>
 <body>
     <div class="bg-grid"></div>
-    <div class="bg-gradient-orb orb-1"></div>
-    <div class="bg-gradient-orb orb-2"></div>
 
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
                     <div class="logo-icon">📊</div>
-                    <div class="logo-text">
+                    <div>
                         <h1>PPC Budget Calculator</h1>
-                        <span>Industry Benchmarks 2024-2025</span>
+                        <span>2024-2025 Industry Benchmarks</span>
                     </div>
                 </div>
                 <nav>
                     <a href="#calculator">Calculator</a>
                     <a href="#benchmarks">Benchmarks</a>
-                    <a href="#platforms">Platforms</a>
                     <a href="#methodology">Methodology</a>
                 </nav>
             </div>
@@ -966,38 +687,14 @@
     <main>
         <section class="hero">
             <div class="container">
-                <div class="hero-badge">Updated with 2024-2025 Data</div>
-                <h2>Plan Your Paid Advertising<br>Budget with Confidence</h2>
-                <p>Use real industry benchmarks from Google Ads, Meta/Facebook, and other platforms to estimate conversions, allocate spend, and project ROI for your business.</p>
-                
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <div class="stat-value">$4.66</div>
-                        <div class="stat-label">Avg. Google Ads CPC</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">6.96%</div>
-                        <div class="stat-label">Avg. Conversion Rate</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">$0.77</div>
-                        <div class="stat-label">Avg. Facebook CPC</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">3.08x</div>
-                        <div class="stat-label">Median ROAS</div>
-                    </div>
-                </div>
+                <div class="hero-badge">✓ Accurate ROI Projections</div>
+                <h2>Calculate Your Paid Advertising<br>Budget & Expected Returns</h2>
+                <p>Get realistic projections based on your industry's actual CPC, conversion rates, deal values, and close rates.</p>
             </div>
         </section>
 
         <section id="calculator">
             <div class="container">
-                <div class="section-header">
-                    <h3>Budget Calculator & Projections</h3>
-                    <p>Enter your business details to get customized paid advertising recommendations based on industry benchmarks.</p>
-                </div>
-
                 <div class="calculator-wrapper">
                     <div class="input-panel">
                         <div class="panel-header">
@@ -1007,63 +704,75 @@
 
                         <div class="form-group">
                             <label>Industry <span class="required">*</span></label>
-                            <select id="industry">
+                            <select id="industry" onchange="updateIndustryDefaults()">
                                 <option value="">Select your industry...</option>
-                                <option value="ecommerce">E-commerce / Retail</option>
-                                <option value="legal">Legal Services (Attorneys)</option>
-                                <option value="finance">Finance & Insurance</option>
-                                <option value="healthcare">Healthcare / Medical</option>
-                                <option value="realestate">Real Estate</option>
-                                <option value="homeservices">Home Services / Improvement</option>
-                                <option value="automotive">Automotive</option>
-                                <option value="travel">Travel & Hospitality</option>
-                                <option value="education">Education</option>
-                                <option value="saas">SaaS / Technology</option>
-                                <option value="restaurants">Restaurants & Food</option>
-                                <option value="fitness">Fitness & Wellness</option>
-                                <option value="beauty">Beauty & Personal Care</option>
-                                <option value="pets">Animals & Pets</option>
-                                <option value="b2b">B2B Services</option>
-                                <option value="arts">Arts & Entertainment</option>
+                                <optgroup label="E-commerce / Direct Sales">
+                                    <option value="ecommerce">E-commerce / Online Retail</option>
+                                    <option value="apparel">Apparel & Fashion</option>
+                                    <option value="beauty">Beauty & Personal Care</option>
+                                    <option value="pets">Pets & Animals</option>
+                                    <option value="restaurants">Restaurants & Food</option>
+                                </optgroup>
+                                <optgroup label="Lead Generation / Services">
+                                    <option value="legal">Legal Services (Attorneys)</option>
+                                    <option value="finance">Finance & Insurance</option>
+                                    <option value="realestate">Real Estate</option>
+                                    <option value="healthcare">Healthcare / Medical</option>
+                                    <option value="homeservices">Home Services / Contractors</option>
+                                    <option value="automotive">Automotive Services</option>
+                                    <option value="education">Education</option>
+                                    <option value="fitness">Fitness & Wellness</option>
+                                </optgroup>
+                                <optgroup label="B2B / SaaS">
+                                    <option value="saas">SaaS / Software</option>
+                                    <option value="b2b">B2B Services</option>
+                                </optgroup>
+                                <optgroup label="Other">
+                                    <option value="travel">Travel & Hospitality</option>
+                                    <option value="arts">Arts & Entertainment</option>
+                                </optgroup>
                             </select>
                         </div>
 
+                        <div class="industry-hint" id="industry-hint"></div>
+
                         <div class="form-group">
-                            <label>Monthly Advertising Budget <span class="required">*</span></label>
+                            <label>Monthly Ad Budget <span class="required">*</span></label>
                             <div class="input-prefix">
-                                <input type="number" id="budget" placeholder="5000" min="500" step="100">
+                                <input type="number" id="budget" placeholder="5000" min="500" value="5000">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label>Average Order/Deal Value ($)</label>
+                        <div class="form-group" id="aov-group">
+                            <label>Average Order Value <span class="label-hint">(Your typical sale amount)</span></label>
                             <div class="input-prefix">
-                                <input type="number" id="aov" placeholder="150" min="1">
+                                <input type="number" id="aov" placeholder="150" min="1" value="150">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label>Annual Revenue (Optional)</label>
+                        <div class="form-group" id="deal-value-group" style="display: none;">
+                            <label>Average Deal/Case Value <span class="label-hint">(Revenue per closed client)</span></label>
                             <div class="input-prefix">
-                                <input type="number" id="revenue" placeholder="1000000" min="0">
+                                <input type="number" id="dealValue" placeholder="5000" min="1">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label>Primary Goal</label>
-                            <select id="goal">
-                                <option value="leads">Lead Generation</option>
-                                <option value="sales">Direct Sales / E-commerce</option>
-                                <option value="awareness">Brand Awareness</option>
-                                <option value="traffic">Website Traffic</option>
-                            </select>
+                        <div class="form-group" id="close-rate-group" style="display: none;">
+                            <label>Lead-to-Close Rate <span class="label-hint">(% of leads that become customers)</span></label>
+                            <div class="input-suffix">
+                                <input type="number" id="closeRate" placeholder="20" min="1" max="100">
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="ltv-group" style="display: none;">
+                            <label>Customer Lifetime Value <span class="label-hint">(Total revenue per customer over time)</span></label>
+                            <div class="input-prefix">
+                                <input type="number" id="ltv" placeholder="15000" min="1">
+                            </div>
                         </div>
 
                         <button class="btn btn-primary" onclick="calculateBudget()">
-                            <span>Calculate Budget</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
-                            </svg>
+                            Calculate Projections →
                         </button>
                     </div>
 
@@ -1073,97 +782,63 @@
                             <h4>Projected Results</h4>
                         </div>
 
-                        <div class="tabs">
-                            <button class="tab active" onclick="switchTab('overview')">Overview</button>
-                            <button class="tab" onclick="switchTab('breakdown')">Channel Breakdown</button>
-                            <button class="tab" onclick="switchTab('scenarios')">Scenarios</button>
+                        <div id="results-placeholder" style="text-align: center; padding: 60px 20px; color: var(--text-muted);">
+                            <p style="font-size: 2rem; margin-bottom: 12px;">👆</p>
+                            <p>Select your industry and enter your budget to see projections</p>
                         </div>
 
-                        <div id="overview" class="tab-content active">
-                            <div class="results-summary">
-                                <div class="result-card highlight">
+                        <div id="results-content" class="hidden">
+                            <div class="results-grid">
+                                <div class="result-card">
                                     <div class="result-label">Est. Monthly Clicks</div>
-                                    <div class="result-value" id="est-clicks">—</div>
-                                    <div class="result-change" id="clicks-note">Select industry to calculate</div>
+                                    <div class="result-value" id="res-clicks">—</div>
+                                    <div class="result-note" id="res-clicks-note"></div>
+                                </div>
+                                <div class="result-card">
+                                    <div class="result-label" id="res-conv-label">Est. Conversions</div>
+                                    <div class="result-value" id="res-conversions">—</div>
+                                    <div class="result-note" id="res-conv-note"></div>
+                                </div>
+                                <div class="result-card" id="leads-card" style="display: none;">
+                                    <div class="result-label">Est. Closed Deals</div>
+                                    <div class="result-value" id="res-closed">—</div>
+                                    <div class="result-note" id="res-closed-note"></div>
+                                </div>
+                                <div class="result-card">
+                                    <div class="result-label">Cost Per Conversion</div>
+                                    <div class="result-value" id="res-cpa">—</div>
+                                    <div class="result-note" id="res-cpa-note"></div>
                                 </div>
                                 <div class="result-card highlight">
-                                    <div class="result-label">Est. Conversions</div>
-                                    <div class="result-value positive" id="est-conversions">—</div>
-                                    <div class="result-change" id="conv-rate">Based on industry avg.</div>
+                                    <div class="result-label">Est. Revenue Generated</div>
+                                    <div class="result-value positive" id="res-revenue">—</div>
+                                    <div class="result-note" id="res-revenue-note"></div>
                                 </div>
-                                <div class="result-card">
-                                    <div class="result-label">Est. Revenue</div>
-                                    <div class="result-value" id="est-revenue">—</div>
-                                    <div class="result-change" id="revenue-note">Using your AOV</div>
+                                <div class="result-card highlight">
+                                    <div class="result-label">Return on Ad Spend</div>
+                                    <div class="result-value" id="res-roas">—</div>
+                                    <div class="result-note" id="res-roas-note"></div>
                                 </div>
-                                <div class="result-card">
-                                    <div class="result-label">Est. ROAS</div>
-                                    <div class="result-value" id="est-roas">—</div>
-                                    <div class="result-change" id="roas-benchmark">Industry benchmark</div>
-                                </div>
+                            </div>
+
+                            <div class="math-breakdown">
+                                <h5>📐 How We Calculated This</h5>
+                                <div id="math-steps"></div>
                             </div>
 
                             <div class="allocation-section">
-                                <div class="allocation-header">
-                                    <h5>Recommended Budget Allocation</h5>
-                                </div>
-                                <div class="allocation-bar" id="allocation-bar">
-                                    <div class="allocation-segment" style="width: 45%; background: var(--accent-primary);"></div>
-                                    <div class="allocation-segment" style="width: 25%; background: var(--accent-secondary);"></div>
-                                    <div class="allocation-segment" style="width: 15%; background: var(--accent-tertiary);"></div>
-                                    <div class="allocation-segment" style="width: 15%; background: var(--accent-success);"></div>
-                                </div>
-                                <div class="allocation-legend" id="allocation-legend">
-                                    <div class="legend-item">
-                                        <div class="legend-color" style="background: var(--accent-primary);"></div>
-                                        <div class="legend-info">
-                                            <div class="legend-name">Google Search Ads</div>
-                                            <div class="legend-value" id="alloc-search">$2,250 (45%)</div>
-                                        </div>
-                                    </div>
-                                    <div class="legend-item">
-                                        <div class="legend-color" style="background: var(--accent-secondary);"></div>
-                                        <div class="legend-info">
-                                            <div class="legend-name">Meta (Facebook/Instagram)</div>
-                                            <div class="legend-value" id="alloc-social">$1,250 (25%)</div>
-                                        </div>
-                                    </div>
-                                    <div class="legend-item">
-                                        <div class="legend-color" style="background: var(--accent-tertiary);"></div>
-                                        <div class="legend-info">
-                                            <div class="legend-name">Display / Retargeting</div>
-                                            <div class="legend-value" id="alloc-display">$750 (15%)</div>
-                                        </div>
-                                    </div>
-                                    <div class="legend-item">
-                                        <div class="legend-color" style="background: var(--accent-success);"></div>
-                                        <div class="legend-info">
-                                            <div class="legend-name">Testing Budget</div>
-                                            <div class="legend-value" id="alloc-test">$750 (15%)</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="breakdown" class="tab-content">
-                            <div class="platform-metrics-detailed" id="channel-breakdown">
-                                <p style="color: var(--text-secondary); text-align: center; padding: 40px;">Select an industry and enter your budget to see detailed channel breakdown.</p>
-                            </div>
-                        </div>
-
-                        <div id="scenarios" class="tab-content">
-                            <div id="scenarios-content">
-                                <p style="color: var(--text-secondary); text-align: center; padding: 40px;">Select an industry and enter your budget to see different budget scenarios.</p>
+                                <h5 style="font-size: 0.9rem; margin-bottom: 4px;">Recommended Budget Allocation</h5>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">Based on your industry and goals</p>
+                                
+                                <div class="allocation-bar" id="allocation-bar"></div>
+                                
+                                <div class="allocation-legend" id="allocation-legend"></div>
                             </div>
                         </div>
 
                         <div class="disclaimer">
                             <div class="disclaimer-icon">!</div>
-                            <div class="disclaimer-content">
-                                <h6>Estimates Only - Not Financial Advice</h6>
-                                <p>These projections are based on industry averages and benchmarks. Actual results vary significantly based on ad quality, landing pages, competition, targeting, seasonality, and many other factors. A detailed assessment of your specific business is needed for accurate projections. Use this tool for directional guidance only.</p>
-                            </div>
+                            <p><strong>Estimates Only:</strong> These projections use industry averages. Your actual results depend on ad quality, landing pages, competition, targeting, and many other factors. Use for directional planning only—a detailed audit of your specific business is needed for accurate forecasting.</p>
                         </div>
                     </div>
                 </div>
@@ -1174,8 +849,8 @@
             <div class="container">
                 <div class="benchmarks-section">
                     <div class="section-header">
-                        <h3>Industry Benchmarks</h3>
-                        <p>Current Google Ads benchmarks by industry (2024-2025 data)</p>
+                        <h3>Industry Benchmarks 2024-2025</h3>
+                        <p>Google Ads Search benchmarks by industry</p>
                     </div>
 
                     <div class="table-wrapper">
@@ -1183,263 +858,100 @@
                             <thead>
                                 <tr>
                                     <th>Industry</th>
-                                    <th>Avg. CPC</th>
-                                    <th>Avg. CTR</th>
+                                    <th>Type</th>
+                                    <th>Avg CPC</th>
                                     <th>Conv. Rate</th>
-                                    <th>Avg. CPL</th>
-                                    <th>Competition</th>
+                                    <th>Avg CPL/CPA</th>
+                                    <th>Typical Deal Value</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="industry-name">Legal Services (Attorneys)</td>
+                                    <td class="industry-name">Legal Services</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
                                     <td class="metric-value">$8.94</td>
-                                    <td>4.76%</td>
                                     <td>6.46%</td>
-                                    <td class="metric-value">$111.05</td>
-                                    <td><span class="metric-badge badge-high">High</span></td>
+                                    <td class="metric-value">$111</td>
+                                    <td>$3,000 - $15,000+</td>
                                 </tr>
                                 <tr>
                                     <td class="industry-name">Finance & Insurance</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
                                     <td class="metric-value">$5.16</td>
-                                    <td>7.83%</td>
                                     <td>2.78%</td>
-                                    <td class="metric-value">$90.02</td>
-                                    <td><span class="metric-badge badge-high">High</span></td>
+                                    <td class="metric-value">$90</td>
+                                    <td>$2,000 - $50,000+</td>
                                 </tr>
                                 <tr>
-                                    <td class="industry-name">Home Improvement</td>
+                                    <td class="industry-name">Home Services</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
                                     <td class="metric-value">$6.96</td>
-                                    <td>5.50%</td>
                                     <td>7.19%</td>
-                                    <td class="metric-value">$66.02</td>
-                                    <td><span class="metric-badge badge-high">High</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">Dentists & Dental</td>
-                                    <td class="metric-value">$6.82</td>
-                                    <td>5.34%</td>
-                                    <td>8.41%</td>
-                                    <td class="metric-value">$53.81</td>
-                                    <td><span class="metric-badge badge-high">High</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">Healthcare / Physicians</td>
-                                    <td class="metric-value">$4.71</td>
-                                    <td>6.22%</td>
-                                    <td>11.08%</td>
-                                    <td class="metric-value">$37.71</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">Automotive (Repair/Parts)</td>
-                                    <td class="metric-value">$3.06</td>
-                                    <td>7.93%</td>
-                                    <td>12.96%</td>
-                                    <td class="metric-value">$21.12</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">E-commerce / Retail</td>
-                                    <td class="metric-value">$1.16</td>
-                                    <td>6.05%</td>
-                                    <td>2.81%</td>
-                                    <td class="metric-value">$45.27</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
+                                    <td class="metric-value">$66</td>
+                                    <td>$500 - $25,000+</td>
                                 </tr>
                                 <tr>
                                     <td class="industry-name">Real Estate</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
                                     <td class="metric-value">$2.10</td>
-                                    <td>8.55%</td>
                                     <td>2.91%</td>
-                                    <td class="metric-value">$66.02</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
+                                    <td class="metric-value">$66</td>
+                                    <td>$8,000 - $30,000+</td>
                                 </tr>
                                 <tr>
-                                    <td class="industry-name">Travel & Hospitality</td>
-                                    <td class="metric-value">$1.92</td>
-                                    <td>8.54%</td>
-                                    <td>4.68%</td>
-                                    <td class="metric-value">$44.73</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
+                                    <td class="industry-name">Healthcare</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
+                                    <td class="metric-value">$4.71</td>
+                                    <td>11.08%</td>
+                                    <td class="metric-value">$38</td>
+                                    <td>$200 - $5,000+</td>
                                 </tr>
                                 <tr>
-                                    <td class="industry-name">Education</td>
-                                    <td class="metric-value">$4.10</td>
-                                    <td>6.17%</td>
-                                    <td>6.23%</td>
-                                    <td class="metric-value">$54.60</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">B2B / Industrial</td>
-                                    <td class="metric-value">$4.73</td>
-                                    <td>5.17%</td>
+                                    <td class="industry-name">B2B / SaaS</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
+                                    <td class="metric-value">$5.08</td>
                                     <td>5.31%</td>
-                                    <td class="metric-value">$77.52</td>
-                                    <td><span class="metric-badge badge-medium">Medium</span></td>
+                                    <td class="metric-value">$78</td>
+                                    <td>$5,000 - $100,000+</td>
                                 </tr>
                                 <tr>
-                                    <td class="industry-name">Animals & Pets</td>
-                                    <td class="metric-value">$2.66</td>
-                                    <td>6.45%</td>
-                                    <td>12.03%</td>
-                                    <td class="metric-value">$19.42</td>
-                                    <td><span class="metric-badge badge-low">Low</span></td>
+                                    <td class="industry-name">E-commerce</td>
+                                    <td><span class="badge badge-ecom">E-com</span></td>
+                                    <td class="metric-value">$1.16</td>
+                                    <td>2.81%</td>
+                                    <td class="metric-value">$45</td>
+                                    <td>$50 - $500 AOV</td>
+                                </tr>
+                                <tr>
+                                    <td class="industry-name">Travel</td>
+                                    <td><span class="badge badge-ecom">E-com</span></td>
+                                    <td class="metric-value">$1.92</td>
+                                    <td>4.68%</td>
+                                    <td class="metric-value">$45</td>
+                                    <td>$200 - $3,000 AOV</td>
+                                </tr>
+                                <tr>
+                                    <td class="industry-name">Automotive</td>
+                                    <td><span class="badge badge-lead">Lead Gen</span></td>
+                                    <td class="metric-value">$3.06</td>
+                                    <td>12.96%</td>
+                                    <td class="metric-value">$21</td>
+                                    <td>$300 - $2,000+</td>
                                 </tr>
                                 <tr>
                                     <td class="industry-name">Arts & Entertainment</td>
+                                    <td><span class="badge badge-ecom">E-com</span></td>
                                     <td class="metric-value">$1.72</td>
-                                    <td>10.67%</td>
                                     <td>5.32%</td>
-                                    <td class="metric-value">$32.90</td>
-                                    <td><span class="metric-badge badge-low">Low</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">Restaurants & Food</td>
-                                    <td class="metric-value">$2.40</td>
-                                    <td>7.19%</td>
-                                    <td>8.65%</td>
-                                    <td class="metric-value">$29.67</td>
-                                    <td><span class="metric-badge badge-low">Low</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="industry-name">Fitness & Recreation</td>
-                                    <td class="metric-value">$2.14</td>
-                                    <td>5.99%</td>
-                                    <td>6.82%</td>
-                                    <td class="metric-value">$31.26</td>
-                                    <td><span class="metric-badge badge-low">Low</span></td>
+                                    <td class="metric-value">$33</td>
+                                    <td>$25 - $200 AOV</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="data-source" style="margin-top: 16px;">
-                        📊 Data sources: WordStream, LocaliQ, Triple Whale, Databox (2024-2025)
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="platforms">
-            <div class="container">
-                <div class="section-header">
-                    <h3>Platform Benchmarks</h3>
-                    <p>Compare average performance metrics across major advertising platforms</p>
-                </div>
-
-                <div class="platform-grid">
-                    <div class="platform-card">
-                        <div class="platform-header">
-                            <div class="platform-logo google">G</div>
-                            <div>
-                                <div class="platform-name">Google Ads</div>
-                                <div class="platform-type">Search & Shopping</div>
-                            </div>
-                        </div>
-                        <div class="platform-metrics">
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPC</div>
-                                <div class="platform-metric-value">$4.66</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CTR</div>
-                                <div class="platform-metric-value">6.42%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Conv. Rate</div>
-                                <div class="platform-metric-value">6.96%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. ROAS</div>
-                                <div class="platform-metric-value">3.08x</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="platform-card">
-                        <div class="platform-header">
-                            <div class="platform-logo meta">f</div>
-                            <div>
-                                <div class="platform-name">Meta (Facebook/Instagram)</div>
-                                <div class="platform-type">Social Advertising</div>
-                            </div>
-                        </div>
-                        <div class="platform-metrics">
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPC (Traffic)</div>
-                                <div class="platform-metric-value">$0.70</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CTR</div>
-                                <div class="platform-metric-value">1.57%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Conv. Rate</div>
-                                <div class="platform-metric-value">8.78%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPL</div>
-                                <div class="platform-metric-value">$21.98</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="platform-card">
-                        <div class="platform-header">
-                            <div class="platform-logo" style="background: var(--accent-primary);">D</div>
-                            <div>
-                                <div class="platform-name">Google Display</div>
-                                <div class="platform-type">Display Network</div>
-                            </div>
-                        </div>
-                        <div class="platform-metrics">
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPC</div>
-                                <div class="platform-metric-value">$0.63</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CTR</div>
-                                <div class="platform-metric-value">0.46%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Conv. Rate</div>
-                                <div class="platform-metric-value">0.57%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPA</div>
-                                <div class="platform-metric-value">$75.51</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="platform-card">
-                        <div class="platform-header">
-                            <div class="platform-logo linkedin">in</div>
-                            <div>
-                                <div class="platform-name">LinkedIn Ads</div>
-                                <div class="platform-type">B2B Advertising</div>
-                            </div>
-                        </div>
-                        <div class="platform-metrics">
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPC</div>
-                                <div class="platform-metric-value">$5.26</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CTR</div>
-                                <div class="platform-metric-value">0.44%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Conv. Rate</div>
-                                <div class="platform-metric-value">2.74%</div>
-                            </div>
-                            <div class="platform-metric">
-                                <div class="platform-metric-label">Avg. CPL</div>
-                                <div class="platform-metric-value">$75-200</div>
-                            </div>
-                        </div>
-                    </div>
+                    <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 16px;">
+                        📊 Sources: WordStream, LocaliQ, Triple Whale, Databox (2024-2025)
+                    </p>
                 </div>
             </div>
         </section>
@@ -1448,33 +960,33 @@
             <div class="container">
                 <div class="benchmarks-section">
                     <div class="section-header">
-                        <h3>Methodology & Data Sources</h3>
-                        <p>How this calculator generates estimates</p>
+                        <h3>How This Calculator Works</h3>
                     </div>
-
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 32px;">
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
                         <div class="result-card">
-                            <h5 style="font-size: 1rem; margin-bottom: 12px;">📊 Data Sources</h5>
-                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">
-                                Benchmarks are compiled from WordStream (16,400+ campaigns), LocaliQ, Triple Whale (7,000+ accounts), Databox, and other industry reports covering 2024-2025 data. Google Ads data represents Search campaigns unless otherwise noted.
+                            <h5 style="margin-bottom: 10px;">🛒 E-commerce Calculation</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                                <strong>Clicks</strong> = Budget ÷ CPC<br>
+                                <strong>Sales</strong> = Clicks × Conversion Rate<br>
+                                <strong>Revenue</strong> = Sales × Average Order Value<br>
+                                <strong>ROAS</strong> = Revenue ÷ Budget
                             </p>
                         </div>
                         <div class="result-card">
-                            <h5 style="font-size: 1rem; margin-bottom: 12px;">🧮 Calculation Method</h5>
-                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">
-                                Estimated clicks = Budget ÷ Industry CPC. Conversions = Clicks × Industry Conversion Rate. Revenue = Conversions × Your AOV. ROAS = Revenue ÷ Budget. Budget allocation follows the 40-50% search, 20-30% social, 10-15% display framework.
+                            <h5 style="margin-bottom: 10px;">📋 Lead Gen Calculation</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                                <strong>Clicks</strong> = Budget ÷ CPC<br>
+                                <strong>Leads</strong> = Clicks × Conversion Rate<br>
+                                <strong>Closed Deals</strong> = Leads × Close Rate<br>
+                                <strong>Revenue</strong> = Deals × Deal Value<br>
+                                <strong>ROAS</strong> = Revenue ÷ Budget
                             </p>
                         </div>
                         <div class="result-card">
-                            <h5 style="font-size: 1rem; margin-bottom: 12px;">⚠️ Important Limitations</h5>
-                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">
-                                Industry averages mask significant variance. Your results depend on ad quality, landing pages, targeting, competition, seasonality, and business factors. This tool provides directional estimates only—not predictions.
-                            </p>
-                        </div>
-                        <div class="result-card">
-                            <h5 style="font-size: 1rem; margin-bottom: 12px;">🎯 Best Practices</h5>
-                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.7;">
-                                Start with 70% of budget on proven channels, 20% on growth experiments, 10% on testing. Track your own benchmarks over time. Optimize for ROAS, not just CPC. Consider customer lifetime value, not just first purchase.
+                            <h5 style="margin-bottom: 10px;">⚠️ Important Factors Not Included</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                                Ad quality score, landing page performance, seasonality, competition changes, audience targeting quality, remarketing efficiency, attribution modeling, and profit margins.
                             </p>
                         </div>
                     </div>
@@ -1485,214 +997,190 @@
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>PPC Budget Calculator — Free tool for planning paid advertising spend</p>
-                    <p style="margin-top: 4px; font-size: 0.75rem;">Last updated: December 2024 • Data from 2024-2025 industry reports</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#calculator">Calculator</a>
-                    <a href="#benchmarks">Benchmarks</a>
-                    <a href="#methodology">Methodology</a>
-                </div>
-            </div>
+            <p>PPC Budget Calculator by Rizen Metrics • Data updated December 2024</p>
         </div>
     </footer>
 
     <script>
-        // Industry benchmark data
+        // Complete industry data with realistic values
         const industryData = {
+            // E-COMMERCE (Direct Sales)
             ecommerce: {
                 name: "E-commerce / Retail",
+                type: "ecommerce",
                 googleCpc: 1.16,
-                googleCtr: 6.05,
                 conversionRate: 2.81,
-                cpl: 45.27,
-                fbCpc: 0.70,
-                fbCtr: 1.72,
-                fbConvRate: 8.78,
-                roas: 2.87,
-                allocation: { search: 35, social: 35, display: 15, test: 15 }
+                defaultAov: 85,
+                hint: "Conversion = completed purchase. Using industry avg AOV of $85.",
+                allocation: { search: 40, social: 35, shopping: 15, test: 10 }
             },
-            legal: {
-                name: "Legal Services",
-                googleCpc: 8.94,
-                googleCtr: 4.76,
-                conversionRate: 6.46,
-                cpl: 111.05,
-                fbCpc: 1.32,
-                fbCtr: 1.61,
-                fbConvRate: 4.64,
-                roas: 2.5,
-                allocation: { search: 55, social: 20, display: 10, test: 15 }
-            },
-            finance: {
-                name: "Finance & Insurance",
-                googleCpc: 5.16,
-                googleCtr: 7.83,
-                conversionRate: 2.78,
-                cpl: 90.02,
-                fbCpc: 3.77,
-                fbCtr: 0.56,
-                fbConvRate: 4.11,
-                roas: 2.2,
-                allocation: { search: 50, social: 20, display: 15, test: 15 }
-            },
-            healthcare: {
-                name: "Healthcare / Medical",
-                googleCpc: 4.71,
-                googleCtr: 6.22,
-                conversionRate: 11.08,
-                cpl: 37.71,
-                fbCpc: 1.32,
-                fbCtr: 0.83,
-                fbConvRate: 5.60,
-                roas: 3.5,
-                allocation: { search: 45, social: 25, display: 15, test: 15 }
-            },
-            realestate: {
-                name: "Real Estate",
-                googleCpc: 2.10,
-                googleCtr: 8.55,
-                conversionRate: 2.91,
-                cpl: 66.02,
-                fbCpc: 1.81,
-                fbCtr: 2.45,
-                fbConvRate: 3.69,
-                roas: 4.0,
-                allocation: { search: 40, social: 30, display: 15, test: 15 }
-            },
-            homeservices: {
-                name: "Home Services",
-                googleCpc: 6.96,
-                googleCtr: 5.50,
-                conversionRate: 7.19,
-                cpl: 66.02,
-                fbCpc: 2.93,
-                fbCtr: 0.70,
-                fbConvRate: 5.38,
-                roas: 3.2,
-                allocation: { search: 50, social: 20, display: 15, test: 15 }
-            },
-            automotive: {
-                name: "Automotive",
-                googleCpc: 3.06,
-                googleCtr: 7.93,
-                conversionRate: 12.96,
-                cpl: 21.12,
-                fbCpc: 2.24,
-                fbCtr: 0.80,
-                fbConvRate: 5.11,
-                roas: 3.8,
-                allocation: { search: 45, social: 25, display: 15, test: 15 }
-            },
-            travel: {
-                name: "Travel & Hospitality",
-                googleCpc: 1.92,
-                googleCtr: 8.54,
-                conversionRate: 4.68,
-                cpl: 44.73,
-                fbCpc: 0.63,
-                fbCtr: 0.90,
-                fbConvRate: 3.95,
-                roas: 4.5,
-                allocation: { search: 35, social: 35, display: 15, test: 15 }
-            },
-            education: {
-                name: "Education",
-                googleCpc: 4.10,
-                googleCtr: 6.17,
-                conversionRate: 6.23,
-                cpl: 54.60,
-                fbCpc: 1.06,
-                fbCtr: 0.73,
-                fbConvRate: 5.73,
-                roas: 3.0,
-                allocation: { search: 40, social: 30, display: 15, test: 15 }
-            },
-            saas: {
-                name: "SaaS / Technology",
-                googleCpc: 5.08,
-                googleCtr: 5.31,
-                conversionRate: 5.31,
-                cpl: 77.52,
-                fbCpc: 1.27,
-                fbCtr: 1.04,
-                fbConvRate: 4.68,
-                roas: 2.5,
-                allocation: { search: 45, social: 25, display: 15, test: 15 }
-            },
-            restaurants: {
-                name: "Restaurants & Food",
-                googleCpc: 2.40,
-                googleCtr: 7.19,
-                conversionRate: 8.65,
-                cpl: 29.67,
-                fbCpc: 0.52,
-                fbCtr: 0.88,
-                fbConvRate: 7.85,
-                roas: 4.0,
-                allocation: { search: 30, social: 40, display: 15, test: 15 }
-            },
-            fitness: {
-                name: "Fitness & Wellness",
-                googleCpc: 2.14,
-                googleCtr: 5.99,
-                conversionRate: 6.82,
-                cpl: 31.26,
-                fbCpc: 1.90,
-                fbCtr: 1.01,
-                fbConvRate: 5.89,
-                roas: 3.5,
-                allocation: { search: 35, social: 35, display: 15, test: 15 }
+            apparel: {
+                name: "Apparel & Fashion",
+                type: "ecommerce",
+                googleCpc: 1.45,
+                conversionRate: 2.44,
+                defaultAov: 95,
+                hint: "Fashion e-commerce typically sees 2-3% conversion rates. Adjust AOV to your store.",
+                allocation: { search: 30, social: 45, shopping: 15, test: 10 }
             },
             beauty: {
                 name: "Beauty & Personal Care",
+                type: "ecommerce",
                 googleCpc: 2.89,
-                googleCtr: 5.92,
                 conversionRate: 5.56,
-                cpl: 42.89,
-                fbCpc: 1.81,
-                fbCtr: 1.16,
-                fbConvRate: 6.90,
-                roas: 3.8,
-                allocation: { search: 30, social: 40, display: 15, test: 15 }
+                defaultAov: 65,
+                hint: "Beauty has strong social performance. Consider influencer spend in your mix.",
+                allocation: { search: 30, social: 45, shopping: 15, test: 10 }
             },
             pets: {
-                name: "Animals & Pets",
+                name: "Pets & Animals",
+                type: "ecommerce",
                 googleCpc: 2.66,
-                googleCtr: 6.45,
                 conversionRate: 12.03,
-                cpl: 19.42,
-                fbCpc: 1.87,
-                fbCtr: 1.44,
-                fbConvRate: 7.23,
-                roas: 4.2,
-                allocation: { search: 35, social: 35, display: 15, test: 15 }
+                defaultAov: 55,
+                hint: "Pet industry has excellent conversion rates (12%+)! High repeat purchase potential.",
+                allocation: { search: 35, social: 35, shopping: 20, test: 10 }
             },
-            b2b: {
-                name: "B2B Services",
-                googleCpc: 4.73,
-                googleCtr: 5.17,
-                conversionRate: 5.31,
-                cpl: 77.52,
-                fbCpc: 2.52,
-                fbCtr: 0.77,
-                fbConvRate: 3.26,
-                roas: 2.0,
-                allocation: { search: 50, social: 20, display: 15, test: 15 }
+            restaurants: {
+                name: "Restaurants & Food",
+                type: "ecommerce",
+                googleCpc: 2.40,
+                conversionRate: 8.65,
+                defaultAov: 35,
+                hint: "Include delivery/takeout orders. High frequency = high lifetime value.",
+                allocation: { search: 35, social: 40, display: 15, test: 10 }
+            },
+            travel: {
+                name: "Travel & Hospitality",
+                type: "ecommerce",
+                googleCpc: 1.92,
+                conversionRate: 4.68,
+                defaultAov: 450,
+                hint: "Higher AOV ($450+) but longer consideration. Remarketing is essential.",
+                allocation: { search: 45, social: 25, display: 20, test: 10 }
             },
             arts: {
                 name: "Arts & Entertainment",
+                type: "ecommerce",
                 googleCpc: 1.72,
-                googleCtr: 10.67,
                 conversionRate: 5.32,
-                cpl: 32.90,
-                fbCpc: 0.44,
-                fbCtr: 2.55,
-                fbConvRate: 4.85,
-                roas: 4.5,
-                allocation: { search: 30, social: 40, display: 15, test: 15 }
+                defaultAov: 45,
+                hint: "Low CPCs and good conversion rates. Great ROI potential.",
+                allocation: { search: 35, social: 40, display: 15, test: 10 }
+            },
+
+            // LEAD GENERATION
+            legal: {
+                name: "Legal Services",
+                type: "leadgen",
+                googleCpc: 8.94,
+                conversionRate: 6.46,
+                defaultDealValue: 5000,
+                defaultCloseRate: 25,
+                defaultLtv: 8000,
+                hint: "High CPC ($8.94) but case values justify spend. Personal injury often $10K+. Adjust deal value to your practice area.",
+                allocation: { search: 60, social: 15, display: 15, test: 10 }
+            },
+            finance: {
+                name: "Finance & Insurance",
+                type: "leadgen",
+                googleCpc: 5.16,
+                conversionRate: 2.78,
+                defaultDealValue: 3500,
+                defaultCloseRate: 15,
+                defaultLtv: 12000,
+                hint: "Lower conversion rate (2.78%) but very high LTV. Mortgage/insurance policies = long-term value.",
+                allocation: { search: 55, social: 20, display: 15, test: 10 }
+            },
+            realestate: {
+                name: "Real Estate",
+                type: "leadgen",
+                googleCpc: 2.10,
+                conversionRate: 2.91,
+                defaultDealValue: 12000,
+                defaultCloseRate: 10,
+                defaultLtv: 15000,
+                hint: "Low CPC ($2.10) + high commissions (~$12K) = excellent ROI potential. Lead-to-close typically 5-15%.",
+                allocation: { search: 45, social: 30, display: 15, test: 10 }
+            },
+            healthcare: {
+                name: "Healthcare / Medical",
+                type: "leadgen",
+                googleCpc: 4.71,
+                conversionRate: 11.08,
+                defaultDealValue: 800,
+                defaultCloseRate: 60,
+                defaultLtv: 3500,
+                hint: "High conversion rate (11%)! Patients often book. Consider LTV for recurring visits.",
+                allocation: { search: 50, social: 25, display: 15, test: 10 }
+            },
+            homeservices: {
+                name: "Home Services / Contractors",
+                type: "leadgen",
+                googleCpc: 6.96,
+                conversionRate: 7.19,
+                defaultDealValue: 2500,
+                defaultCloseRate: 35,
+                defaultLtv: 5000,
+                hint: "High intent searches. Avg project $2,500 but kitchen/bath remodels = $15K+. Adjust to your services.",
+                allocation: { search: 55, social: 20, display: 15, test: 10 }
+            },
+            automotive: {
+                name: "Automotive Services",
+                type: "leadgen",
+                googleCpc: 3.06,
+                conversionRate: 12.96,
+                defaultDealValue: 450,
+                defaultCloseRate: 50,
+                defaultLtv: 2000,
+                hint: "Excellent 13% conversion rate! High repeat business—consider LTV for loyal customers.",
+                allocation: { search: 50, social: 25, display: 15, test: 10 }
+            },
+            education: {
+                name: "Education",
+                type: "leadgen",
+                googleCpc: 4.10,
+                conversionRate: 6.23,
+                defaultDealValue: 3000,
+                defaultCloseRate: 20,
+                defaultLtv: 8000,
+                hint: "Enrollment value varies: Bootcamps $10K+, online courses $500-$3K. Adjust to your offering.",
+                allocation: { search: 45, social: 30, display: 15, test: 10 }
+            },
+            fitness: {
+                name: "Fitness & Wellness",
+                type: "leadgen",
+                googleCpc: 2.14,
+                conversionRate: 6.82,
+                defaultDealValue: 600,
+                defaultCloseRate: 40,
+                defaultLtv: 2400,
+                hint: "Membership LTV is key. 12-month member = $600-$1,200 value. Personal training higher.",
+                allocation: { search: 40, social: 35, display: 15, test: 10 }
+            },
+
+            // B2B / SaaS
+            saas: {
+                name: "SaaS / Software",
+                type: "leadgen",
+                googleCpc: 5.08,
+                conversionRate: 5.31,
+                defaultDealValue: 8000,
+                defaultCloseRate: 15,
+                defaultLtv: 25000,
+                hint: "Long sales cycles (3-6mo). Annual contract value matters. Enterprise deals can be $50K+.",
+                allocation: { search: 45, social: 20, display: 20, test: 15 }
+            },
+            b2b: {
+                name: "B2B Services",
+                type: "leadgen",
+                googleCpc: 4.73,
+                conversionRate: 5.31,
+                defaultDealValue: 15000,
+                defaultCloseRate: 20,
+                defaultLtv: 50000,
+                hint: "High deal values ($15K+) justify higher CPLs. Focus on qualified lead quality over quantity.",
+                allocation: { search: 50, social: 15, display: 20, test: 15 }
             }
         };
 
@@ -1705,200 +1193,193 @@
             }).format(value);
         }
 
-        function formatNumber(value) {
+        function formatNumber(value, decimals = 0) {
             return new Intl.NumberFormat('en-US', {
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
+                minimumFractionDigits: decimals,
+                maximumFractionDigits: decimals
             }).format(value);
         }
 
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-            
-            event.target.classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-        }
-
-        function calculateBudget() {
+        function updateIndustryDefaults() {
             const industry = document.getElementById('industry').value;
-            const budget = parseFloat(document.getElementById('budget').value) || 5000;
-            const aov = parseFloat(document.getElementById('aov').value) || 150;
-            const revenue = parseFloat(document.getElementById('revenue').value) || 0;
-            const goal = document.getElementById('goal').value;
-
             if (!industry) {
-                alert('Please select an industry to calculate your budget.');
+                document.getElementById('industry-hint').classList.remove('show');
                 return;
             }
 
             const data = industryData[industry];
+            const hint = document.getElementById('industry-hint');
             
-            // Calculate blended CPC (weighted average of channels)
-            const allocation = data.allocation;
-            const searchBudget = budget * (allocation.search / 100);
-            const socialBudget = budget * (allocation.social / 100);
-            const displayBudget = budget * (allocation.display / 100);
-            const testBudget = budget * (allocation.test / 100);
+            // Show hint
+            hint.innerHTML = `<strong>${data.name}:</strong> ${data.hint}`;
+            hint.classList.add('show');
 
-            // Estimate clicks per channel
-            const searchClicks = searchBudget / data.googleCpc;
-            const socialClicks = socialBudget / data.fbCpc;
-            const displayClicks = displayBudget / 0.63; // Display avg CPC
-            const totalClicks = searchClicks + socialClicks + displayClicks;
-
-            // Estimate conversions (using weighted conversion rates)
-            const searchConversions = searchClicks * (data.conversionRate / 100);
-            const socialConversions = socialClicks * (data.fbConvRate / 100);
-            const displayConversions = displayClicks * (0.57 / 100); // Display avg conv rate
-            const totalConversions = searchConversions + socialConversions + displayConversions;
-
-            // Calculate revenue and ROAS
-            const estimatedRevenue = totalConversions * aov;
-            const estimatedRoas = estimatedRevenue / budget;
-
-            // Update Overview tab
-            document.getElementById('est-clicks').textContent = formatNumber(Math.round(totalClicks));
-            document.getElementById('clicks-note').textContent = `Based on ${data.name} CPC`;
+            // Toggle fields based on type
+            const isLeadGen = data.type === 'leadgen';
             
-            document.getElementById('est-conversions').textContent = formatNumber(Math.round(totalConversions));
-            document.getElementById('conv-rate').textContent = `${data.conversionRate}% Google / ${data.fbConvRate}% Meta`;
-            
-            document.getElementById('est-revenue').textContent = formatCurrency(estimatedRevenue);
-            document.getElementById('revenue-note').textContent = `@ ${formatCurrency(aov)} avg. value`;
-            
-            document.getElementById('est-roas').textContent = `${estimatedRoas.toFixed(2)}x`;
-            document.getElementById('roas-benchmark').textContent = `Industry avg: ${data.roas}x`;
+            document.getElementById('aov-group').style.display = isLeadGen ? 'none' : 'block';
+            document.getElementById('deal-value-group').style.display = isLeadGen ? 'block' : 'none';
+            document.getElementById('close-rate-group').style.display = isLeadGen ? 'block' : 'none';
+            document.getElementById('ltv-group').style.display = isLeadGen ? 'block' : 'none';
 
-            // Update allocation bar
-            const allocationBar = document.getElementById('allocation-bar');
-            allocationBar.innerHTML = `
-                <div class="allocation-segment" style="width: ${allocation.search}%; background: var(--accent-primary);"></div>
-                <div class="allocation-segment" style="width: ${allocation.social}%; background: var(--accent-secondary);"></div>
-                <div class="allocation-segment" style="width: ${allocation.display}%; background: var(--accent-tertiary);"></div>
-                <div class="allocation-segment" style="width: ${allocation.test}%; background: var(--accent-success);"></div>
-            `;
-
-            // Update allocation legend
-            document.getElementById('alloc-search').textContent = `${formatCurrency(searchBudget)} (${allocation.search}%)`;
-            document.getElementById('alloc-social').textContent = `${formatCurrency(socialBudget)} (${allocation.social}%)`;
-            document.getElementById('alloc-display').textContent = `${formatCurrency(displayBudget)} (${allocation.display}%)`;
-            document.getElementById('alloc-test').textContent = `${formatCurrency(testBudget)} (${allocation.test}%)`;
-
-            // Update Channel Breakdown tab
-            const breakdownHtml = `
-                <div style="display: grid; gap: 16px;">
-                    <div class="result-card">
-                        <h5 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--accent-primary);">🔍 Google Search Ads</h5>
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Budget</span><br><strong>${formatCurrency(searchBudget)}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Est. Clicks</span><br><strong>${formatNumber(Math.round(searchClicks))}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Est. Conversions</span><br><strong>${formatNumber(Math.round(searchConversions))}</strong></div>
-                        </div>
-                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 12px;">CPC: ${formatCurrency(data.googleCpc)} • CTR: ${data.googleCtr}% • Conv Rate: ${data.conversionRate}%</p>
-                    </div>
-                    <div class="result-card">
-                        <h5 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--accent-secondary);">📱 Meta (Facebook/Instagram)</h5>
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Budget</span><br><strong>${formatCurrency(socialBudget)}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Est. Clicks</span><br><strong>${formatNumber(Math.round(socialClicks))}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Est. Conversions</span><br><strong>${formatNumber(Math.round(socialConversions))}</strong></div>
-                        </div>
-                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 12px;">CPC: ${formatCurrency(data.fbCpc)} • CTR: ${data.fbCtr}% • Conv Rate: ${data.fbConvRate}%</p>
-                    </div>
-                    <div class="result-card">
-                        <h5 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--accent-tertiary);">🖼️ Display / Retargeting</h5>
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Budget</span><br><strong>${formatCurrency(displayBudget)}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Est. Impressions</span><br><strong>${formatNumber(Math.round(displayBudget / 5 * 1000))}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Est. Conversions</span><br><strong>${formatNumber(Math.round(displayConversions))}</strong></div>
-                        </div>
-                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 12px;">CPC: $0.63 • CTR: 0.46% • Conv Rate: 0.57% (industry avg)</p>
-                    </div>
-                    <div class="result-card">
-                        <h5 style="font-size: 0.9rem; margin-bottom: 12px; color: var(--accent-success);">🧪 Testing Budget</h5>
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Budget</span><br><strong>${formatCurrency(testBudget)}</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Purpose</span><br><strong>New Channels</strong></div>
-                            <div><span style="color: var(--text-muted); font-size: 0.75rem;">Recommendation</span><br><strong>A/B Testing</strong></div>
-                        </div>
-                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 12px;">Reserved for testing new platforms, audiences, and ad creative experiments</p>
-                    </div>
-                </div>
-            `;
-            document.getElementById('channel-breakdown').innerHTML = breakdownHtml;
-
-            // Update Scenarios tab
-            const scenarios = [
-                { multiplier: 0.5, label: "Conservative (-50%)" },
-                { multiplier: 1.0, label: "Current Budget" },
-                { multiplier: 1.5, label: "Growth (+50%)" },
-                { multiplier: 2.0, label: "Aggressive (2x)" }
-            ];
-
-            let scenariosHtml = '<div style="display: grid; gap: 16px;">';
-            scenarios.forEach(scenario => {
-                const scenarioBudget = budget * scenario.multiplier;
-                const scenarioClicks = totalClicks * scenario.multiplier;
-                const scenarioConversions = totalConversions * scenario.multiplier;
-                const scenarioRevenue = scenarioConversions * aov;
-                const isCurrentBudget = scenario.multiplier === 1.0;
-                
-                scenariosHtml += `
-                    <div class="result-card ${isCurrentBudget ? 'highlight' : ''}">
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                            <h5 style="font-size: 0.9rem;">${scenario.label}</h5>
-                            <span style="font-family: var(--font-mono); font-size: 1.125rem; font-weight: 600;">${formatCurrency(scenarioBudget)}/mo</span>
-                        </div>
-                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; text-align: center;">
-                            <div>
-                                <span style="color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase;">Clicks</span>
-                                <div style="font-family: var(--font-mono); font-weight: 600;">${formatNumber(Math.round(scenarioClicks))}</div>
-                            </div>
-                            <div>
-                                <span style="color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase;">Conversions</span>
-                                <div style="font-family: var(--font-mono); font-weight: 600;">${formatNumber(Math.round(scenarioConversions))}</div>
-                            </div>
-                            <div>
-                                <span style="color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase;">Revenue</span>
-                                <div style="font-family: var(--font-mono); font-weight: 600; color: var(--accent-success);">${formatCurrency(scenarioRevenue)}</div>
-                            </div>
-                            <div>
-                                <span style="color: var(--text-muted); font-size: 0.7rem; text-transform: uppercase;">ROAS</span>
-                                <div style="font-family: var(--font-mono); font-weight: 600;">${(scenarioRevenue / scenarioBudget).toFixed(2)}x</div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
-            scenariosHtml += '</div>';
-            
-            scenariosHtml += `
-                <div class="disclaimer" style="margin-top: 20px;">
-                    <div class="disclaimer-icon">i</div>
-                    <div class="disclaimer-content">
-                        <h6 style="color: var(--accent-primary);">About These Scenarios</h6>
-                        <p>These projections assume linear scaling, which rarely happens in practice. Higher budgets often face diminishing returns, while lower budgets may not reach minimum thresholds for optimization. Use as directional guidance only.</p>
-                    </div>
-                </div>
-            `;
-            
-            document.getElementById('scenarios-content').innerHTML = scenariosHtml;
+            // Set default values
+            if (isLeadGen) {
+                document.getElementById('dealValue').value = data.defaultDealValue;
+                document.getElementById('closeRate').value = data.defaultCloseRate;
+                document.getElementById('ltv').value = data.defaultLtv;
+            } else {
+                document.getElementById('aov').value = data.defaultAov;
+            }
         }
 
-        // Initialize with placeholder on load
-        document.addEventListener('DOMContentLoaded', () => {
-            // Add smooth scroll for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-        });
+        function calculateBudget() {
+            const industryKey = document.getElementById('industry').value;
+            if (!industryKey) {
+                alert('Please select an industry.');
+                return;
+            }
+
+            const data = industryData[industryKey];
+            const budget = parseFloat(document.getElementById('budget').value) || 5000;
+            const isLeadGen = data.type === 'leadgen';
+
+            // Get values based on type
+            let aov, dealValue, closeRate, ltv;
+            
+            if (isLeadGen) {
+                dealValue = parseFloat(document.getElementById('dealValue').value) || data.defaultDealValue;
+                closeRate = (parseFloat(document.getElementById('closeRate').value) || data.defaultCloseRate) / 100;
+                ltv = parseFloat(document.getElementById('ltv').value) || data.defaultLtv;
+            } else {
+                aov = parseFloat(document.getElementById('aov').value) || data.defaultAov;
+            }
+
+            // Core calculations (Google Ads focused for accuracy)
+            const clicks = budget / data.googleCpc;
+            const conversions = clicks * (data.conversionRate / 100);
+            const cpa = budget / conversions;
+
+            let closedDeals, revenue, roas, roasClass;
+
+            if (isLeadGen) {
+                closedDeals = conversions * closeRate;
+                revenue = closedDeals * dealValue;
+                roas = revenue / budget;
+            } else {
+                closedDeals = null;
+                revenue = conversions * aov;
+                roas = revenue / budget;
+            }
+
+            // Determine ROAS status
+            if (roas >= 3) {
+                roasClass = 'positive';
+            } else if (roas >= 1.5) {
+                roasClass = 'neutral';
+            } else {
+                roasClass = 'negative';
+            }
+
+            // Show results
+            document.getElementById('results-placeholder').classList.add('hidden');
+            document.getElementById('results-content').classList.remove('hidden');
+
+            // Update results
+            document.getElementById('res-clicks').textContent = formatNumber(Math.round(clicks));
+            document.getElementById('res-clicks-note').textContent = `@ ${formatCurrency(data.googleCpc)} avg CPC`;
+
+            if (isLeadGen) {
+                document.getElementById('res-conv-label').textContent = 'Est. Leads Generated';
+                document.getElementById('res-conversions').textContent = formatNumber(Math.round(conversions));
+                document.getElementById('res-conv-note').textContent = `${data.conversionRate}% conversion rate`;
+                
+                document.getElementById('leads-card').style.display = 'block';
+                document.getElementById('res-closed').textContent = formatNumber(closedDeals, 1);
+                document.getElementById('res-closed-note').textContent = `@ ${(closeRate * 100).toFixed(0)}% close rate`;
+            } else {
+                document.getElementById('res-conv-label').textContent = 'Est. Sales/Orders';
+                document.getElementById('res-conversions').textContent = formatNumber(Math.round(conversions));
+                document.getElementById('res-conv-note').textContent = `${data.conversionRate}% conversion rate`;
+                document.getElementById('leads-card').style.display = 'none';
+            }
+
+            document.getElementById('res-cpa').textContent = formatCurrency(cpa);
+            document.getElementById('res-cpa-note').textContent = isLeadGen ? 'Cost per lead' : 'Cost per sale';
+
+            document.getElementById('res-revenue').textContent = formatCurrency(revenue);
+            document.getElementById('res-revenue').className = `result-value ${roasClass}`;
+            document.getElementById('res-revenue-note').textContent = isLeadGen 
+                ? `${formatNumber(closedDeals, 1)} deals × ${formatCurrency(dealValue)}`
+                : `${formatNumber(Math.round(conversions))} orders × ${formatCurrency(aov)}`;
+
+            document.getElementById('res-roas').textContent = `${roas.toFixed(2)}x`;
+            document.getElementById('res-roas').className = `result-value ${roasClass}`;
+            document.getElementById('res-roas-note').textContent = roas >= 1 
+                ? `${formatCurrency(revenue - budget)} profit` 
+                : `${formatCurrency(budget - revenue)} loss`;
+
+            // Math breakdown
+            let mathHtml = '';
+            mathHtml += `<div class="math-row"><span class="math-label">Monthly Budget</span><span class="math-value">${formatCurrency(budget)}</span></div>`;
+            mathHtml += `<div class="math-row"><span class="math-label">÷ Cost Per Click</span><span class="math-value">${formatCurrency(data.googleCpc)}</span></div>`;
+            mathHtml += `<div class="math-row"><span class="math-label">= Estimated Clicks</span><span class="math-value">${formatNumber(Math.round(clicks))}</span></div>`;
+            mathHtml += `<div class="math-row"><span class="math-label">× Conversion Rate</span><span class="math-value">${data.conversionRate}%</span></div>`;
+            mathHtml += `<div class="math-row"><span class="math-label">= ${isLeadGen ? 'Leads' : 'Sales'}</span><span class="math-value">${formatNumber(Math.round(conversions))}</span></div>`;
+            
+            if (isLeadGen) {
+                mathHtml += `<div class="math-row"><span class="math-label">× Close Rate</span><span class="math-value">${(closeRate * 100).toFixed(0)}%</span></div>`;
+                mathHtml += `<div class="math-row"><span class="math-label">= Closed Deals</span><span class="math-value">${formatNumber(closedDeals, 1)}</span></div>`;
+                mathHtml += `<div class="math-row"><span class="math-label">× Deal Value</span><span class="math-value">${formatCurrency(dealValue)}</span></div>`;
+            } else {
+                mathHtml += `<div class="math-row"><span class="math-label">× Avg Order Value</span><span class="math-value">${formatCurrency(aov)}</span></div>`;
+            }
+            
+            mathHtml += `<div class="math-row total"><span class="math-label">= Estimated Revenue</span><span class="math-value" style="color: var(--accent-success);">${formatCurrency(revenue)}</span></div>`;
+            mathHtml += `<div class="math-row total"><span class="math-label">ROAS (Revenue ÷ Budget)</span><span class="math-value" style="color: ${roas >= 1.5 ? 'var(--accent-success)' : 'var(--accent-danger)'};">${roas.toFixed(2)}x</span></div>`;
+
+            if (isLeadGen && ltv > dealValue) {
+                const ltvRevenue = closedDeals * ltv;
+                const ltvRoas = ltvRevenue / budget;
+                mathHtml += `<div class="math-row" style="margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--border-color);"><span class="math-label">📈 With LTV (${formatCurrency(ltv)})</span><span class="math-value" style="color: var(--accent-success);">${formatCurrency(ltvRevenue)} (${ltvRoas.toFixed(2)}x ROAS)</span></div>`;
+            }
+
+            document.getElementById('math-steps').innerHTML = mathHtml;
+
+            // Budget allocation
+            const alloc = data.allocation;
+            let allocBar = '';
+            let allocLegend = '';
+            
+            const colors = {
+                search: 'var(--accent-primary)',
+                social: 'var(--accent-secondary)',
+                shopping: 'var(--accent-tertiary)',
+                display: 'var(--accent-tertiary)',
+                test: 'var(--accent-success)'
+            };
+            
+            const labels = {
+                search: 'Google Search',
+                social: 'Meta/Social',
+                shopping: 'Shopping Ads',
+                display: 'Display/Retargeting',
+                test: 'Testing'
+            };
+
+            for (const [key, pct] of Object.entries(alloc)) {
+                allocBar += `<div class="allocation-segment" style="width: ${pct}%; background: ${colors[key]};"></div>`;
+                allocLegend += `
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: ${colors[key]};"></div>
+                        <span>${labels[key]}</span>
+                        <span class="legend-value">${formatCurrency(budget * pct / 100)}</span>
+                    </div>
+                `;
+            }
+
+            document.getElementById('allocation-bar').innerHTML = allocBar;
+            document.getElementById('allocation-legend').innerHTML = allocLegend;
+        }
     </script>
 </body>
 </html>
