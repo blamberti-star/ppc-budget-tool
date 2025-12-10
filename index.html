@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -828,11 +827,13 @@
 
                             <div class="allocation-section">
                                 <h5 style="font-size: 0.9rem; margin-bottom: 4px;">Recommended Budget Allocation</h5>
-                                <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">Based on your industry and goals</p>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px;">Based on 2024-2025 industry benchmarks and platform performance data</p>
                                 
                                 <div class="allocation-bar" id="allocation-bar"></div>
                                 
                                 <div class="allocation-legend" id="allocation-legend"></div>
+                                
+                                <div class="allocation-rationale" id="allocation-rationale" style="margin-top: 12px; padding: 12px; background: rgba(59, 130, 246, 0.1); border-radius: 8px; font-size: 0.75rem; color: var(--text-secondary); border-left: 3px solid var(--accent-primary);"></div>
                             </div>
                         </div>
 
@@ -984,6 +985,12 @@
                             </p>
                         </div>
                         <div class="result-card">
+                            <h5 style="margin-bottom: 10px;">📊 Budget Allocation Sources</h5>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
+                                Channel recommendations based on: Dreamdata B2B Benchmarks (39% LinkedIn, 37% Google for B2B), Triple Whale E-commerce Report (7,000+ accounts), Gartner CMO Survey 2024-2025, industry case studies, and platform performance data.
+                            </p>
+                        </div>
+                        <div class="result-card">
                             <h5 style="margin-bottom: 10px;">⚠️ Important Factors Not Included</h5>
                             <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">
                                 Ad quality score, landing page performance, seasonality, competition changes, audience targeting quality, remarketing efficiency, attribution modeling, and profit margins.
@@ -997,7 +1004,7 @@
 
     <footer>
         <div class="container">
-            <p>PPC Budget Calculator by Rizen Metrics • Data updated December 2025</p>
+            <p>PPC Budget Calculator by Rizen Metrics • Data updated December 2024</p>
         </div>
     </footer>
 
@@ -1011,8 +1018,9 @@
                 googleCpc: 1.16,
                 conversionRate: 2.81,
                 defaultAov: 85,
-                hint: "Conversion = completed purchase. Using industry avg AOV of $85.",
-                allocation: { search: 40, social: 35, shopping: 15, test: 10 }
+                hint: "Social commerce is key—Meta drives $7B+ in e-commerce ad spend. Retargeting boosts conversions 70%+ vs display.",
+                allocation: { search: 30, shopping: 25, social: 30, retarget: 15 },
+                allocationRationale: "Meta/social dominated 2024 e-commerce ad spend; Google Shopping captures high-intent buyers; retargeting critical for cart abandonment (81% abandon rate)."
             },
             apparel: {
                 name: "Apparel & Fashion",
@@ -1020,8 +1028,9 @@
                 googleCpc: 1.45,
                 conversionRate: 2.44,
                 defaultAov: 95,
-                hint: "Fashion e-commerce typically sees 2-3% conversion rates. Adjust AOV to your store.",
-                allocation: { search: 30, social: 45, shopping: 15, test: 10 }
+                hint: "Fashion brands spend 2-3x more on Meta than Google. TikTok Shop drove $1.39B in womenswear GMV in 2024.",
+                allocation: { social: 40, tiktok: 20, search: 20, retarget: 20 },
+                allocationRationale: "Clothing brands spent $1.23B on Facebook vs $451M on Google in 2024. Visual platforms drive discovery; TikTok/social commerce growing 200%+ YoY."
             },
             beauty: {
                 name: "Beauty & Personal Care",
@@ -1029,8 +1038,9 @@
                 googleCpc: 2.89,
                 conversionRate: 5.56,
                 defaultAov: 65,
-                hint: "Beauty has strong social performance. Consider influencer spend in your mix.",
-                allocation: { search: 30, social: 45, shopping: 15, test: 10 }
+                hint: "TikTok Shop's #1 category! 79% of US TikTok Shop sales are beauty. Influencer content drives 22% sales increase.",
+                allocation: { social: 40, tiktok: 25, search: 20, retarget: 15 },
+                allocationRationale: "Beauty spent $1.68B on Facebook, $138M on TikTok in 2024. TikTok Shop beauty = $2.49B GMV globally. Trend-driven, visual-first content essential."
             },
             pets: {
                 name: "Pets & Animals",
@@ -1038,8 +1048,9 @@
                 googleCpc: 2.66,
                 conversionRate: 12.03,
                 defaultAov: 55,
-                hint: "Pet industry has excellent conversion rates (12%+)! High repeat purchase potential.",
-                allocation: { search: 35, social: 35, shopping: 20, test: 10 }
+                hint: "Excellent 12%+ conversion rate! Visual content performs well on social. High repeat purchase potential.",
+                allocation: { search: 30, shopping: 25, social: 30, retarget: 15 },
+                allocationRationale: "High conversion justifies search spend; visual pet content excels on social; retargeting drives repeat purchases for consumables."
             },
             restaurants: {
                 name: "Restaurants & Food",
@@ -1047,8 +1058,9 @@
                 googleCpc: 2.40,
                 conversionRate: 8.65,
                 defaultAov: 35,
-                hint: "Include delivery/takeout orders. High frequency = high lifetime value.",
-                allocation: { search: 35, social: 40, display: 15, test: 10 }
+                hint: "Google dominates discovery—76% of 'restaurant near me' searches. Instagram/TikTok drive food visuals. Loyalty critical.",
+                allocation: { local: 35, social: 35, retarget: 15, test: 15 },
+                allocationRationale: "Google Maps/Local essential for discovery. 82% of restaurants use social media marketing. Avg budget is 3-6% of revenue."
             },
             travel: {
                 name: "Travel & Hospitality",
@@ -1056,8 +1068,9 @@
                 googleCpc: 1.92,
                 conversionRate: 4.68,
                 defaultAov: 450,
-                hint: "Higher AOV ($450+) but longer consideration. Remarketing is essential.",
-                allocation: { search: 45, social: 25, display: 20, test: 10 }
+                hint: "Hotels typically spend 4-8% of revenue on marketing. Metasearch (TripAdvisor, Google Hotels) and retargeting are critical—81% abandonment rate.",
+                allocation: { search: 35, metasearch: 25, social: 20, retarget: 20 },
+                allocationRationale: "Travel has 2nd highest cart abandonment (81.3%). Metasearch drives direct bookings. OTAs spend 54% of revenue on marketing—hotels must compete."
             },
             arts: {
                 name: "Arts & Entertainment",
@@ -1065,8 +1078,9 @@
                 googleCpc: 1.72,
                 conversionRate: 5.32,
                 defaultAov: 45,
-                hint: "Low CPCs and good conversion rates. Great ROI potential.",
-                allocation: { search: 35, social: 40, display: 15, test: 10 }
+                hint: "Low CPCs and good conversion rates. Social works well for event/experience promotion.",
+                allocation: { social: 40, search: 30, retarget: 20, test: 10 },
+                allocationRationale: "Event and experience marketing thrives on social discovery and retargeting for consideration period."
             },
 
             // LEAD GENERATION
@@ -1078,8 +1092,9 @@
                 defaultDealValue: 5000,
                 defaultCloseRate: 25,
                 defaultLtv: 8000,
-                hint: "High CPC ($8.94) but case values justify spend. Personal injury often $10K+. Adjust deal value to your practice area.",
-                allocation: { search: 60, social: 15, display: 15, test: 10 }
+                hint: "Highest CPC industry ($8.94+) but case values justify spend. Google Search is essential—40-70% of budget to high-intent conversion. LSA + PPC dominant.",
+                allocation: { search: 60, retarget: 20, social: 10, test: 10 },
+                allocationRationale: "Legal is extremely high-intent. Personal injury, divorce, criminal searches = active need. Google dominates; social mainly for awareness. 96% of clients search for attorneys online."
             },
             finance: {
                 name: "Finance & Insurance",
@@ -1089,8 +1104,9 @@
                 defaultDealValue: 3500,
                 defaultCloseRate: 15,
                 defaultLtv: 12000,
-                hint: "Lower conversion rate (2.78%) but very high LTV. Mortgage/insurance policies = long-term value.",
-                allocation: { search: 55, social: 20, display: 15, test: 10 }
+                hint: "Lower conversion rate (2.78%) but very high LTV. Mix Google for high-intent + LinkedIn for B2B financial services.",
+                allocation: { search: 50, linkedin: 20, retarget: 15, social: 10, test: 5 },
+                allocationRationale: "Financial services need trust-building. Google captures active searchers; LinkedIn important for B2B (wealth management, business insurance). Retargeting nurtures long decision cycles."
             },
             realestate: {
                 name: "Real Estate",
@@ -1100,8 +1116,9 @@
                 defaultDealValue: 12000,
                 defaultCloseRate: 10,
                 defaultLtv: 15000,
-                hint: "Low CPC ($2.10) + high commissions (~$12K) = excellent ROI potential. Lead-to-close typically 5-15%.",
-                allocation: { search: 45, social: 30, display: 15, test: 10 }
+                hint: "Meta excels at retargeting and local farming (30-40% of budget). Google captures seller/buyer intent (25-35%). Agents should invest 10-15% of GCI in marketing.",
+                allocation: { social: 35, search: 30, retarget: 20, test: 15 },
+                allocationRationale: "Real estate case study: $2,300 Facebook spend = 768 leads @ $2.98 CPL. Meta dominates for local targeting and visual property content. Google for high-intent searches."
             },
             healthcare: {
                 name: "Healthcare / Medical",
@@ -1111,8 +1128,9 @@
                 defaultDealValue: 800,
                 defaultCloseRate: 60,
                 defaultLtv: 3500,
-                hint: "High conversion rate (11%)! Patients often book. Consider LTV for recurring visits.",
-                allocation: { search: 50, social: 25, display: 15, test: 10 }
+                hint: "Excellent 11% conversion! Patients actively search for care. Most practices allocate 1-5% of revenue to marketing. SEO + PPC + reputation management key.",
+                allocation: { search: 45, social: 25, retarget: 20, test: 10 },
+                allocationRationale: "40-60% of healthcare budgets go to paid ads. Google captures high-intent patients searching for care. Meta CPL $40-120 for broader awareness. Reputation management critical."
             },
             homeservices: {
                 name: "Home Services / Contractors",
@@ -1122,8 +1140,9 @@
                 defaultDealValue: 2500,
                 defaultCloseRate: 35,
                 defaultLtv: 5000,
-                hint: "High intent searches. Avg project $2,500 but kitchen/bath remodels = $15K+. Adjust to your services.",
-                allocation: { search: 55, social: 20, display: 15, test: 10 }
+                hint: "Google Local Services Ads (LSA) are essential—$25-45/lead vs $6.96 CPC. LSA shows at top with Google Guarantee badge. 5 of top 20 most expensive keywords are home services.",
+                allocation: { search: 45, lsa: 25, retarget: 20, social: 10 },
+                allocationRationale: "Home services is extremely high-intent. LSA generates verified leads at pay-per-lead vs PPC. HVAC $29/lead, Plumber $27/lead, Roofer $38/lead via LSA. Google dominates local search."
             },
             automotive: {
                 name: "Automotive Services",
@@ -1133,8 +1152,9 @@
                 defaultDealValue: 450,
                 defaultCloseRate: 50,
                 defaultLtv: 2000,
-                hint: "Excellent 13% conversion rate! High repeat business—consider LTV for loyal customers.",
-                allocation: { search: 50, social: 25, display: 15, test: 10 }
+                hint: "Excellent 13% conversion rate—highest among industries! High repeat business. Local search dominates. Consider LTV for loyal customers.",
+                allocation: { search: 50, social: 25, retarget: 15, test: 10 },
+                allocationRationale: "Automotive has highest Google Ads conversion rate. Local intent is strong. Retargeting effective for service reminders and repeat business."
             },
             education: {
                 name: "Education",
@@ -1144,8 +1164,9 @@
                 defaultDealValue: 3000,
                 defaultCloseRate: 20,
                 defaultLtv: 8000,
-                hint: "Enrollment value varies: Bootcamps $10K+, online courses $500-$3K. Adjust to your offering.",
-                allocation: { search: 45, social: 30, display: 15, test: 10 }
+                hint: "Facebook dominates for cold traffic—webinar funnels convert 2-5%. Google costs 3x more per enrollment but captures high-intent branded searches.",
+                allocation: { social: 45, search: 30, retarget: 15, test: 10 },
+                allocationRationale: "Education/online courses thrive on Facebook for cold traffic and lead magnets. Google captures branded and skill-specific searches ('learn Python'). Retargeting nurtures long enrollment cycles."
             },
             fitness: {
                 name: "Fitness & Wellness",
@@ -1155,8 +1176,9 @@
                 defaultDealValue: 600,
                 defaultCloseRate: 40,
                 defaultLtv: 2400,
-                hint: "Membership LTV is key. 12-month member = $600-$1,200 value. Personal training higher.",
-                allocation: { search: 40, social: 35, display: 15, test: 10 }
+                hint: "Social works well for lifestyle/transformation content. Google captures local gym searches. Membership LTV is key—12-month member = $600-$1,200 value.",
+                allocation: { social: 40, search: 35, retarget: 15, test: 10 },
+                allocationRationale: "Fitness thrives on aspirational social content and before/after transformations. Local search captures 'gym near me' intent. Retargeting for trial conversions."
             },
 
             // B2B / SaaS
@@ -1168,8 +1190,9 @@
                 defaultDealValue: 8000,
                 defaultCloseRate: 15,
                 defaultLtv: 25000,
-                hint: "Long sales cycles (3-6mo). Annual contract value matters. Enterprise deals can be $50K+.",
-                allocation: { search: 45, social: 20, display: 20, test: 15 }
+                hint: "LinkedIn = 39% of B2B ad budgets (up from 31% in H1 2024). Google captures bottom-funnel 'best CRM software' searches. Long sales cycles (3-6mo).",
+                allocation: { linkedin: 35, search: 35, retarget: 20, social: 10 },
+                allocationRationale: "B2B marketers allocated 39% to LinkedIn, 37% to Google by end of 2024 (Dreamdata). LinkedIn delivers 113% ROAS for B2B. Google captures 7-10% conversion on bottom-funnel searches."
             },
             b2b: {
                 name: "B2B Services",
@@ -1179,8 +1202,9 @@
                 defaultDealValue: 15000,
                 defaultCloseRate: 20,
                 defaultLtv: 50000,
-                hint: "High deal values ($15K+) justify higher CPLs. Focus on qualified lead quality over quantity.",
-                allocation: { search: 50, social: 15, display: 20, test: 15 }
+                hint: "LinkedIn is the largest single B2B ad platform by spend. High deal values ($15K+) justify higher CPLs. Enterprise sales cycle: 6-18 months. Focus on qualified pipeline, not lead volume.",
+                allocation: { linkedin: 40, search: 30, retarget: 20, test: 10 },
+                allocationRationale: "LinkedIn delivers precise firmographic targeting for B2B. Google captures demand. B2B retargeting 4x more effective than B2C. 211-day avg B2B journey with 6.8 stakeholders."
             }
         };
 
@@ -1353,17 +1377,29 @@
             const colors = {
                 search: 'var(--accent-primary)',
                 social: 'var(--accent-secondary)',
-                shopping: 'var(--accent-tertiary)',
+                shopping: '#f59e0b',
                 display: 'var(--accent-tertiary)',
-                test: 'var(--accent-success)'
+                retarget: 'var(--accent-tertiary)',
+                test: 'var(--accent-success)',
+                linkedin: '#0077b5',
+                lsa: '#34a853',
+                tiktok: '#ff0050',
+                metasearch: '#ff5722',
+                local: '#34a853'
             };
             
             const labels = {
-                search: 'Google Search',
-                social: 'Meta/Social',
+                search: 'Google Search/PPC',
+                social: 'Meta (Facebook/Instagram)',
                 shopping: 'Shopping Ads',
                 display: 'Display/Retargeting',
-                test: 'Testing'
+                retarget: 'Retargeting/Display',
+                test: 'Testing/Experimental',
+                linkedin: 'LinkedIn Ads',
+                lsa: 'Google Local Services',
+                tiktok: 'TikTok/Social Commerce',
+                metasearch: 'Metasearch (TripAdvisor, etc.)',
+                local: 'Local/Google Maps'
             };
 
             for (const [key, pct] of Object.entries(alloc)) {
@@ -1379,6 +1415,14 @@
 
             document.getElementById('allocation-bar').innerHTML = allocBar;
             document.getElementById('allocation-legend').innerHTML = allocLegend;
+            
+            // Show allocation rationale
+            if (data.allocationRationale) {
+                document.getElementById('allocation-rationale').innerHTML = `<strong>📊 Why this split?</strong> ${data.allocationRationale}`;
+                document.getElementById('allocation-rationale').style.display = 'block';
+            } else {
+                document.getElementById('allocation-rationale').style.display = 'none';
+            }
         }
     </script>
 </body>
